@@ -1,38 +1,86 @@
-.App {
+.input-area {
+  background-color: aqua;
+  width: 100%;
+  height: 60px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+.incomplete-area {
+  background-color: aquamarine;
+  width: 100%;
+  min-height: 200px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.complete-area {
+  background-color: antiquewhite;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+.incomplete-text {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 10px;
+  width: 100%;
+}
+
+.complete-text {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+
+}
+
+
+.title {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: grey;
+  padding-top: 8px;
+}
+
+
+
+input {
+  padding: 8px;
+  border-radius: 16px;
+  border: none;
+  margin-top: 15px;
+  margin-right: 8px;
+}
+
+
+button {
+  padding: 5px 15px;
+  border-radius: 16px;
+  border: none;
+  margin-right: 8px;
+  font-weight: 700;
+}
+
+button:hover {
+  background-color: palevioletred;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+p {
+  margin: 0;
+  margin-right: 8px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ul {
+  margin: 0;
+  padding-top:10px;
+  padding-bottom: 10px;
+}
+
+
+/* liに「width:fit-content」と「margin: auto」 */
+li {
+  width: fit-content;
+  margin: auto;
+  text-decoration: none;
+  list-style: none;
 }
